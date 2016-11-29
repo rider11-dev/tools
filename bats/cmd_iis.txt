@@ -1,0 +1,7 @@
+1、修改应用程序池——启用32位应用程序
+①列出所有app，目标：找到指定网站对应应用程序池
+appcmd list app
+②修改应用程序池属性
+appcmd set apppool "net4" /enable32BitAppOnWin64:True
+
+参考：http://blog.sina.com.cn/s/blog_53737d110100ufmz.html
